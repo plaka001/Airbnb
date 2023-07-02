@@ -1,0 +1,362 @@
+/* Variables */
+:root {
+  --Font-Size-h1-Movil: 40px;
+  --Font-Size-h2-Movil: 35px;
+  --Font-Size-h3-Movil: 30px;
+  --Size--svg-check-X-movil: 24px;
+  --Font-Family: "CircularEdit", sans-serif;
+  --Font-Family--light: "Circularlight", sans-serif;
+  --Color-Red: #ff385c;
+  --Color-gray: #222222;
+}
+
+/* fonts */
+
+@font-face {
+  font-family: "CircularEdit";
+  src: url("fonts/AirbnbCereal_W_Md.otf") format("opentype");
+  font-family: "Circularlight";
+  src: url("fonts/AirbnbCereal_W_Lt.otf") format("opentype");
+}
+
+body {
+  font-family: var(--Font-Family);
+  background-color: white;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 1px solid #c9c5c5;
+}
+
+.test {
+  color: #222222;
+  font-family: var(--Font-Family--light);
+}
+
+.separador {
+  height: 1px;
+  background-color: #000;
+}
+
+.svg-container-equis {
+  background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" style="display:block;fill:none;height:24px;width:24px;stroke:%23E12C32;stroke-width:5.333333333333333;overflow:visible" aria-label="No incluye a la competencia" role="img" focusable="false"%3E%3Cpath d="m6 6 20 20M26 6 6 26"%3E%3C/path%3E%3C/svg%3E')
+    center center/contain no-repeat;
+}
+
+.svg-container-check {
+  background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" style="display:block;fill:none;height:24px;width:24px;stroke:%2300A506;stroke-width:5.333333333333333;overflow:visible" aria-label="Incluye a Airbnb" role="img" focusable="false"%3E%3Cpath fill="none" d="m4 16.5 8 8 16-16"%3E%3C/path%3E%3C/svg%3E')
+    center center/contain no-repeat;
+}
+.container {
+  display: block;
+  margin: 0;
+  padding: 0 !important;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  background-color: white;
+  width: 100%;
+}
+
+.section1 {
+  margin: 0 2em 60px 1rem;
+}
+
+.header {
+  background-color: white;
+}
+
+.logo {
+  top: 0;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+  fill: var(--Color-Red);
+}
+
+.headerText {
+  color: var(--Color-gray);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.info {
+  margin-top: 50px;
+}
+
+.infoResumen {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.infoResumen h1,
+h2,
+h3 {
+  line-height: 40px;
+  font-weight: 600;
+}
+.infoResumen .tittle {
+  color: var(--Color-Red);
+}
+
+.custom-range {
+  width: 90%;
+  accent-color: black;
+}
+
+.calculate {
+  margin: 20px;
+  color: #717171;
+}
+
+.buttom-style {
+  width: 100%;
+  padding: 0 1rem 0 1rem;
+  display: flex;
+  border-radius: 40px;
+  border: 1px solid rgb(221, 221, 221) !important;
+  align-items: center;
+  gap: 15px;
+}
+
+.inforeserva {
+  color: rgb(113, 113, 113);
+  font-size: 14px;
+}
+
+/* section */
+
+.data-tittle {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.data-info {
+  text-align: start;
+  font-family: var(--Font-Family--light);
+  color: #717171;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.infoMap img {
+  border-radius: 40px;
+}
+
+.img-div {
+  width: 100%;
+  height: 400px;
+  display: block;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+}
+
+.info-section2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.info-2 {
+  margin-bottom: 60px;
+}
+
+.info-2 h1 {
+  text-align: start;
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--Color-gray);
+  line-height: 30px;
+}
+
+.table-info {
+  margin: 20px;
+}
+
+.tr-table {
+  font-family: var(--Font-Family--light);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 32px;
+  font-size: 14px;
+}
+
+.tr-table th {
+  margin-bottom: 10px;
+}
+
+.tr-table-body {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.table-info-body {
+  display: flex;
+
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.data-table-tittle {
+  font-family: var(--Font-Family);
+  font-weight: 600;
+  margin-right: auto;
+  font-size: 18px;
+}
+.data-table-tittle-2 {
+  font-family: var(--Font-Family--light);
+  font-weight: 400;
+  margin-right: auto;
+  font-size: 14px;
+  padding: 30px 0 30px 0;
+}
+
+.table-parrafo {
+  font-size: 14px;
+  color: #717171;
+  font-family: var(--Font-Family--light);
+}
+
+.svg-container-check,
+.svg-container-equis {
+  margin-right: 40px;
+}
+
+.table-logo {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.btnMoreInformation {
+  font-family: var(--Font-Family);
+  margin: 20px 0 20px 0;
+  padding: 10px;
+  color: #000;
+}
+
+@media screen and (max-width: 767px) {
+  /* header */
+  .header {
+    display: inline flex;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .headerInfo {
+    align-items: center;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .logo {
+    padding: 15px;
+  }
+
+  .logobtn {
+    width: 100px;
+  }
+
+  .headerBtn {
+    width: 100%;
+    height: 100%;
+  }
+
+  .header .headerBtn {
+    color: white;
+    width: 80%;
+    background-color: #e61e4d;
+    border-radius: 0.5rem;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .headerText .subtittle {
+    font-size: 16px;
+  }
+
+  /* section 1*/
+
+  .tittle {
+    font-size: var(--Font-Size-h1-Movil);
+  }
+
+  .subtittle {
+    font-size: var(--Font-Size-h2-Movil);
+    margin-bottom: 20px;
+  }
+
+  .price {
+    font-size: var(--Font-Size-h3-Movil);
+    letter-spacing: -0.03rem;
+  }
+  .infoResumen p {
+    text-align: center;
+    font-size: 16px;
+    color: var(--Color-gray);
+  }
+  a {
+    color: var(--Color-gray);
+  }
+
+  /* section 2 */
+
+  .info-2 {
+    margin: 20px;
+  }
+
+  .data {
+    margin: 20px;
+  }
+  .image {
+    background-image: url("Img/imgSection2Movil.webp");
+    background-size: cover;
+  }
+  .svg-container-check,
+  .svg-container-equis {
+    width: var(--Size--svg-check-X-movil);
+    height: var(--Size--svg-check-X-movil);
+  }
+
+  .image-table {
+    width: 160px;
+    height: 60px;
+    background-size: cover;
+    background-image: url("Img/imgLogo2.webp");
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Estilos para tablets */
+}
+
+@media screen and (min-width: 1024px) {
+  /* Estilos para monitores y pantallas más grandes */
+}
