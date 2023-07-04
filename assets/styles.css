@@ -22,6 +22,7 @@
 body {
   font-family: var(--Font-Family);
   background-color: white;
+  scroll-behavior: smooth;
 }
 
 table {
@@ -293,6 +294,36 @@ h2 {
   justify-content: space-between;
 }
 
+/* section 5 */
+.section-5 {
+  background-color: #f7f7f7;
+  padding: 25px;
+}
+
+.s5-services h3 {
+  margin-top: 10px;
+  font-size: unset !important;
+  font-weight: bold !important;
+}
+.s5-services li {
+  font-size: 14px !important;
+  font-weight: 400;
+  line-height: 30px;
+  outline: none !important;
+  text-decoration: none;
+  list-style: none;
+  font-family: var(--Font-Family--light);
+}
+
+/* footer */
+footer {
+  padding: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 30px;
+  background-color: #f7f7f7;
+}
+
 @media screen and (max-width: 767px) {
   /* header */
   .header {
@@ -404,6 +435,7 @@ h2 {
   }
 
   .s4-svg {
+    cursor: pointer;
     width: 20px;
     height: 20px;
   }
@@ -463,6 +495,8 @@ h2 {
   .s4-btn {
     color: #000;
   }
+
+  /* section 5 */
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
