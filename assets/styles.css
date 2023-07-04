@@ -19,30 +19,7 @@
   src: url("fonts/AirbnbCereal_W_Lt.otf") format("opentype");
 }
 
-body {
-  font-family: var(--Font-Family);
-  background-color: white;
-  scroll-behavior: smooth;
-}
-
-table {
-  border-collapse: collapse;
-}
-
-tr {
-  border-bottom: 1px solid #c9c5c5;
-}
-
-.test {
-  color: #222222;
-  font-family: var(--Font-Family--light);
-}
-
-.separador {
-  height: 1px;
-  background-color: #d3d0d0;
-}
-
+/* SVG */
 .s4-svg {
   background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;"%3E%3Cpath fill="none" d="M28 12 16.7 23.3a1 1 0 0 1-1.4 0L4 12"%3E%3C/path%3E%3C/svg%3E')
     center center/contain no-repeat;
@@ -57,6 +34,28 @@ tr {
   background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" style="display:block;fill:none;height:24px;width:24px;stroke:%2300A506;stroke-width:5.333333333333333;overflow:visible" aria-label="Incluye a Airbnb" role="img" focusable="false"%3E%3Cpath fill="none" d="m4 16.5 8 8 16-16"%3E%3C/path%3E%3C/svg%3E')
     center center/contain no-repeat;
 }
+
+/* general */
+
+body {
+  font-family: var(--Font-Family);
+  background-color: white;
+  scroll-behavior: smooth;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 1px solid #c9c5c5;
+}
+
+.separador {
+  height: 1px;
+  background-color: #d3d0d0;
+}
+
 .container {
   display: block;
   margin: 0;
@@ -67,15 +66,14 @@ tr {
   width: 100%;
 }
 
-.section1 {
-  margin: 0 2em 60px 1rem;
-}
+/* Header */
 
 .header {
   background-color: white;
 }
 
-.logo {
+.logo-header {
+  padding: 15px;
   top: 0;
   flex-direction: column;
   position: fixed;
@@ -86,44 +84,66 @@ tr {
   fill: var(--Color-Red);
 }
 
-.headerText {
+.header-Text {
   color: var(--Color-gray);
   font-weight: 600;
   font-size: 16px;
 }
 
-.info {
+.header .header-Btn {
+  color: white;
+  background-color: #e61e4d;
+}
+
+.header-logo-bton {
+  width: 100px;
+}
+
+/* fin header */
+
+/* section 1 */
+
+.section1 {
+  margin: 0 2em 60px 1rem;
+}
+
+.s1-info {
   margin-top: 50px;
 }
 
-.infoResumen {
+.s1-infoResumen {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
   align-items: center;
 }
 
-.infoResumen h1,
+.s1-infoResumen h1,
 h2,
 h3 {
   line-height: 40px;
   font-weight: 600;
 }
-.infoResumen .tittle {
+.s1-infoResumen .s1-tittle {
   color: var(--Color-Red);
 }
 
-.custom-range {
+.s1-info-days {
+  color: #222222;
+  font-family: var(--Font-Family--light);
+}
+
+.s1-custom-range {
   width: 90%;
   accent-color: black;
 }
 
-.calculate {
+.s1-calculate {
   margin: 20px;
   color: #717171;
 }
 
-.buttom-style {
+.s1-buttom-style {
   width: 100%;
   padding: 0 1rem 0 1rem;
   display: flex;
@@ -133,10 +153,16 @@ h3 {
   gap: 15px;
 }
 
-.inforeserva {
+.s1-inforeserva {
   color: rgb(113, 113, 113);
   font-size: 14px;
 }
+
+.infoMap img {
+  border-radius: 40px;
+}
+
+/* fin section 1 */
 
 /* section */
 
@@ -153,10 +179,6 @@ h3 {
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
-}
-
-.infoMap img {
-  border-radius: 40px;
 }
 
 .img-div {
@@ -327,7 +349,6 @@ footer {
 @media screen and (max-width: 767px) {
   /* header */
   .header {
-    display: inline flex;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -339,7 +360,7 @@ footer {
     text-align: center;
   }
 
-  .headerInfo {
+  .header-Info {
     align-items: center;
     display: flex;
     gap: 5px;
@@ -348,48 +369,36 @@ footer {
     margin-bottom: 5px;
   }
 
-  .logo {
-    padding: 15px;
-  }
-
-  .logobtn {
-    width: 100px;
-  }
-
-  .headerBtn {
+  .header-Btn {
     width: 100%;
     height: 100%;
   }
 
-  .header .headerBtn {
-    color: white;
+  .header .header-Btn {
     width: 80%;
-    background-color: #e61e4d;
     border-radius: 0.5rem;
   }
 
-  img {
-    width: 100%;
-  }
-
-  .headerText .subtittle {
-    font-size: 16px;
-  }
+  /* fin header */
 
   /* section 1*/
 
-  .tittle {
-    font-size: var(--Font-Size-h1-Movil);
-  }
-
-  .subtittle {
+  .s1-subtittle {
     font-size: var(--Font-Size-h2-Movil);
     margin-bottom: 20px;
   }
 
-  .price {
+  .s1-tittle {
+    font-size: var(--Font-Size-h1-Movil);
+  }
+
+  .s1-price {
     font-size: var(--Font-Size-h3-Movil);
     letter-spacing: -0.03rem;
+  }
+
+  img {
+    width: 100%;
   }
   .infoResumen p {
     text-align: center;
