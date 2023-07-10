@@ -174,7 +174,6 @@ h3 {
 
 .s2-info2 {
   display: flex;
-  flex-direction: column;
   width: 100%;
 }
 
@@ -279,7 +278,18 @@ h3 {
   font-size: unset !important;
   font-weight: bold !important;
 }
+
+.s5-services-1 h3 {
+  margin-top: 10px;
+  font-size: unset !important;
+  font-weight: bold !important;
+}
 .s5-services li {
+  outline: none !important;
+  text-decoration: none;
+  list-style: none;
+}
+.s5-services-1 {
   outline: none !important;
   text-decoration: none;
   list-style: none;
@@ -387,6 +397,10 @@ footer {
 
   .s2-info {
     margin: 20px;
+  }
+
+  .s2-info2 {
+    flex-direction: column;
   }
 
   .s2-info h1 {
@@ -543,7 +557,8 @@ footer {
 
   /* section 5 */
 
-  .s5-services li {
+  .s5-services li,
+  .s5-services-1 li {
     font-size: 14px !important;
     font-weight: 400;
     line-height: 30px;
@@ -888,4 +903,372 @@ footer {
 
 @media screen and (min-width: 1024px) {
   /* Estilos para monitores y pantallas más grandes */
+  /* header */
+  .header {
+    padding-left: 200px;
+    padding-right: 270px;
+    width: 100%;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex !important;
+    flex-direction: row !important;
+  }
+
+  .header-Info {
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 20px;
+    gap: 15px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header .header-Btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    border-radius: 0.5rem;
+  }
+
+  /* section 1 */
+
+  /* fin header */
+
+  .section1 {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+  }
+
+  .s1-tittle,
+  .s1-subtittle,
+  .s1-price {
+    line-height: 52px;
+    font-size: 48px;
+  }
+
+  .s1-price {
+    line-height: 58px;
+  }
+  .s1-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .s1-info-days {
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .s1-div-image {
+    width: 650px;
+    height: 650px;
+  }
+
+  .s1-image {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    background-image: url("Img/MapDestock.png");
+    background-size: cover;
+  }
+
+  .s1-custom-range {
+    width: 100%;
+  }
+  /* fin section 1 */
+
+  /* section 2 */
+
+  .section2 {
+    margin: 150px;
+  }
+  .s2-info h1 {
+    margin-top: 30px;
+    color: #222;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: bold !important;
+    line-height: 56px;
+    letter-spacing: -1.08px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .s2-img-div {
+    width: 100%;
+    height: 600px;
+  }
+
+  .s2-image {
+    width: 100%;
+    height: 100%;
+    background-image: url("Img/imgSection2.webp");
+    background-size: cover;
+  }
+
+  .s2-info {
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #717171;
+    font-size: 16px;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .s2-info2 {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 30px;
+    gap: 20px;
+  }
+
+  .s2-data-tittle {
+    color: #222;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+  }
+
+  /* fin section 2 */
+
+  /* Section 3 */
+
+  .section3 {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 50px;
+  }
+
+  .s3-table-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .s3-table-logo {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+
+  .s3-image-table {
+    width: 190px;
+    height: 70px;
+  }
+
+  .s3-tr-table {
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 32px;
+    color: #222;
+    text-align: center;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: 26px;
+  }
+
+  .tittle-table {
+    color: #222;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: -1.08px;
+    margin-bottom: 100px;
+  }
+
+  .s3-tr-table th {
+    margin-bottom: 10px;
+  }
+
+  .s3-tr-table-body {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-direction: column;
+  }
+
+  .s3-svg-container-check,
+  .s3-svg-container-equis {
+    width: var(--Size--svg-check-X-movil);
+    height: var(--Size--svg-check-X-movil);
+    margin-right: 70px;
+  }
+
+  .s3-data-table-tittle {
+    font-weight: 600;
+    margin-right: auto;
+    color: #222;
+    font-size: 22px;
+    font-style: normal;
+    line-height: 26px;
+    letter-spacing: -0.44px;
+  }
+
+  .s3-table-info-body {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .s3-table-parrafo {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    color: #717171;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .s3-data-table-tittle-2 {
+    margin-right: auto;
+    font-size: 14px;
+    padding: 30px 0 30px 0;
+    color: #222;
+
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  /* fin section 3 */
+
+  /* section 4 */
+  .s2-containerAcordeon {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px;
+  }
+  .s4-tittle {
+    color: #222;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: -1.08px;
+  }
+
+  .s4-svg {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+  }
+
+  .s4-card-content-img {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .s4-acordeon-item-header {
+    margin-bottom: 20px;
+  }
+  .s4-acordeon-item-header-tittle {
+    color: #222;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+  }
+
+  .span-acordeon-data {
+    color: #717171;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    white-space: pre-line;
+  }
+
+  .s4-card {
+    display: flex;
+    width: 70%;
+    background-color: white;
+    border-radius: 10px;
+    align-items: center;
+  }
+
+  .s4-card-content {
+    padding: 20px;
+    gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .s4-img-card {
+    border-radius: 10px;
+    width: 40%;
+    height: 300px;
+  }
+
+  .s4-tittle-card {
+    color: #222;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: -1.2px;
+  }
+
+  .s4-info-card {
+    color: #717171;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .s4-img-card {
+    background-size: cover;
+    background-image: url("Img/imgSection4Aweb.png");
+  }
+
+  /* fin section 4 */
+
+  /* section 5 */
+  .s5-data {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+
+  .s5-data h3 {
+    margin: 10px;
+    color: #222;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+  }
+
+  .s5-data li {
+    margin: 10px;
+    color: #222;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+  }
+
+  /* fin section 5 */
 }
